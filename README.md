@@ -55,14 +55,14 @@ In the directory `instances_datner` you will find the instances already built (a
 The data also includes the optimal solutions found by [Raviv and Kolka (2013)](https://www.tandfonline.com/doi/full/10.1080/0740817X.2013.770186?needAccess=true#d1e263). Upon calling the code, the generator will print them with the name of `targets_{city_name}{1or2}.txt`. Note that `targets_boston1.txt` will print out empty, as the authors in Datner et al., (2017) do not provide the solution in the data. To see this, check the output of the following code snippet:
 
 ```C
-        //Print output from .mat files
-		std::cout << "Variable name: " << varname << std::endl;
-		std::cout << "  Class type: " << matvar->class_type << ", Data type: " << matvar->data_type << std::endl;
-        std::cout << "  Rank: " << matvar->rank << std::endl;
-        std::cout << "  Dimensions: ";
-        for (int i = 0; i < matvar->rank; ++i)
-            std::cout << matvar->dims[i] << " ";
-        std::cout << std::endl;
+//Print output from .mat files
+std::cout << "Variable name: " << varname << std::endl;
+std::cout << "  Class type: " << matvar->class_type << ", Data type: " << matvar->data_type << std::endl;
+std::cout << "  Rank: " << matvar->rank << std::endl;
+std::cout << "  Dimensions: ";
+	for (int i = 0; i < matvar->rank; ++i)
+std::cout << matvar->dims[i] << " ";
+std::cout << std::endl;
 ```
 
 You will see that the Matlab variable *InitialState00ofer* is missing for boston1.
