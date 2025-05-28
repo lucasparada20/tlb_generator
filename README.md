@@ -38,7 +38,7 @@ sudo apt install libmatio-dev
 
 ## Running the code
 
-Inside the tlb_generator directory, you will find a script `run_datner_gen.sh` with sample command line calls. The format is:
+Inside the `tlb_generator` directory, you will find a script `run_datner_gen.sh` with sample command line calls. The format is:
 
 * trips_rates_file : The path to the file containing the data for incoming and outgoing rates to the stations.
 * stations_locations_file : The path to the file containing the capacities of the stations.
