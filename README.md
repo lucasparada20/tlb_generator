@@ -60,10 +60,10 @@ std::cout << "Variable name: " << varname << std::endl;
 std::cout << "  Class type: " << matvar->class_type << ", Data type: " << matvar->data_type << std::endl;
 std::cout << "  Rank: " << matvar->rank << std::endl;
 std::cout << "  Dimensions: ";
-	for (int i = 0; i < matvar->rank; ++i)
-std::cout << matvar->dims[i] << " ";
+for (int i = 0; i < matvar->rank; ++i)
+	std::cout << matvar->dims[i] << " ";
 std::cout << std::endl;
 ```
 
-You will see that the Matlab variable *InitialState00ofer* is missing for boston1.
+You will see that the Matlab variable **InitialState00ofer** is missing for boston1.
 
