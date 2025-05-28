@@ -52,7 +52,7 @@ The Poisson process is simulated in the file `MakeScenario.cpp`.
 
 In the directory `instances_datner` you will find the instances already built (and compressed) according to the commands in the `run_datner_gen.sh`.
 
-The data also includes the optimal solutions found by [Raviv and Kolka (2013)](https://www.tandfonline.com/doi/full/10.1080/0740817X.2013.770186?needAccess=true#d1e263). Upon calling the code, the generator will print them with the name of `targets_{city_name}{1or2}.txt`. Note that `targets_boston1.txt` will print out empty, as the authors in Datner et al., (2017) do not provide the solution in the data. To see this, check the output of the following code snippet:
+The data also includes the optimal solutions found by [Raviv and Kolka (2013)](https://www.tandfonline.com/doi/full/10.1080/0740817X.2013.770186?needAccess=true#d1e263). Upon calling the code, the generator will print them with the name of `targets_{city_name}{1or2}.txt`. Note that `targets_boston1.txt` will print out empty, as the authors in Datner et al., (2017) do not provide the solution in the data. To see this, check the output of the following code snippet in `Load.cpp`:
 
 ```C
 //Print output from .mat files
