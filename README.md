@@ -30,7 +30,7 @@ if you want to debug or use valgrind, just type:
 ./build_datner_gen.sh valgrind
 ```
 
-Since the data is given in Matlab files, the generator uses the (Libmatio)[https://packages.debian.org/source/sid/libmatio] library to parse them. The build script will check if Libmatio is found in your system; otherwise, it can be installed with the following:
+Since the data is given in Matlab files, the generator uses the [Libmatio](https://packages.debian.org/source/sid/libmatio) library to parse them. The build script will check if Libmatio is found in your system; otherwise, it can be installed with the following:
 
 ```bash
 sudo apt install libmatio-dev
