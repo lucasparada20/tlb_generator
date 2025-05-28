@@ -38,7 +38,7 @@ sudo apt install libmatio-dev
 
 ## Running the code
 
-Inside the tlb_generator directory, you will find a script *run_datner_gen.sh* with sample command line calls. The format is:
+Inside the tlb_generator directory, you will find a script `run_datner_gen.sh` with sample command line calls. The format is:
 
 * trips_rates_file : The path to the file containing the data for incoming and outgoing rates to the stations.
 * stations_locations_file : The path to the file containing the capacities of the stations.
@@ -46,7 +46,7 @@ Inside the tlb_generator directory, you will find a script *run_datner_gen.sh* w
 * nb_test_scenarios : The integer number of scenarios in which you want to evaluate/test the solution.
 * seed : The integer to initialize the pseudo-random generator for the Poisson process. As a good practice, set it to a high value, non-negative integer.
 
-Following conventional Sample Average Approximation (SAA) methodologies : nb_Scenarios <<< nb_test_scenarios. In the examples, we set nb_scenarios = 100 and nb_test_scenarios = 400.
+Following conventional Sample Average Approximation (SAA) methodologies : `nb_Scenarios <<< nb_test_scenarios`. In the examples, we set nb_scenarios = 100 and nb_test_scenarios = 400.
 
-In the directory *instances_datner* you will find the instances already built (and compressed) according to the commands in the *run_datner_gen.sh*.
+In the directory `instances_datner` you will find the instances already built (and compressed) according to the commands in the `run_datner_gen.sh`.
 
