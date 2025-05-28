@@ -1,7 +1,7 @@
 # tlb_generator
 A generator of instances for the Target-Level Bicycle problem (TLB). In brief, the TLB is a combinatorial optimization problem that determines the optimal quantities of bikes at stations in a bike-sharing system (BSS) to maximize the number of satisfied user trips.
 
-The generator simulates a non-homogeneous Poisson process for given bike arrival and departure rates to and from the stations. The instances can be solved by the Benders' algorithm in [Technical Report](https://www.cirrelt.ca/documentstravail/cirrelt-2025-02.pdf)
+The generator simulates a non-homogeneous Poisson process for given bike arrival and departure rates to and from the stations. The instances can be solved by the Benders' algorithm in this [Technical Report](https://www.cirrelt.ca/documentstravail/cirrelt-2025-02.pdf)
 
 The data is taken from the work of [Datner et al., (2017)](https://pubsonline.informs.org/doi/abs/10.1287/trsc.2017.0790)
 
