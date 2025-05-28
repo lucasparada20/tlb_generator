@@ -34,7 +34,7 @@ Since the data is given in Matlab files, the generator uses the (Libmatio)[https
 
 ```bash
 sudo apt install libmatio-dev
-'''
+```
 
 ## Running the code
 
