@@ -48,7 +48,9 @@ Inside the `tlb_generator` directory, you will find a script `run_datner_gen.sh`
 
 Following conventional Sample Average Approximation (SAA) methodologies : `nb_scenarios <<< nb_test_scenarios`. In the examples, we set nb_scenarios = 100 and nb_test_scenarios = 400.
 
+The Poisson process is simulated in the file `MakeScenario.cpp`.
+
 In the directory `instances_datner` you will find the instances already built (and compressed) according to the commands in the `run_datner_gen.sh`.
 
-The data also include the optimal solutions found by [Raviv and Kolka (2013)](https://www.tandfonline.com/doi/full/10.1080/0740817X.2013.770186?needAccess=true#d1e263). Upon calling the code, the generator will print them with the name of `targets_{city_name}{1or2}.txt`. Note that `targets_boston1.txt` will print out empty, as the authors do not provide the solution in the data.
+The data also includes the optimal solutions found by [Raviv and Kolka (2013)](https://www.tandfonline.com/doi/full/10.1080/0740817X.2013.770186?needAccess=true#d1e263). Upon calling the code, the generator will print them with the name of `targets_{city_name}{1or2}.txt`. Note that `targets_boston1.txt` will print out empty, as the authors in Datner et al., (2017) do not provide the solution in the data.
 
