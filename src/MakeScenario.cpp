@@ -42,7 +42,9 @@ void Scenario::Generate(const int nb_scenarios,
 					{
 						double u = rn.rand01();
 						double rate_per_min = arrival_rates_od[t][i][j] / 30;
-						if(rate_per_min == 0.0) break;
+						
+						double epsilon = 1e-9; // A small tolerance value
+						if (std::abs(rate_per_min) < epsilon) break;
 						int time_next = time + std::ceil(-std::log(1 - u) / rate_per_min);
 						
 						if(time_next > 30) break; 
