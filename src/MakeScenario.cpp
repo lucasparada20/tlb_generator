@@ -33,15 +33,16 @@ void Scenario::Generate(const int nb_scenarios,
 		{
 			for(int j=0;j<nb_stations;j++)
 			{
-				for(int t = start_hour; t < end_hour; t++)
+				for(int t = start_hour; t <= end_hour; t++)
 				{
-					if(arrival_rates_od[t][i][j] < 0.00001) continue;
+					//if(arrival_rates_od[t][i][j] < 0.00001) continue;
 					
 					int time=0;
 					while(true)
 					{
 						double u = rn.rand01();
 						double rate_per_min = arrival_rates_od[t][i][j] / 30;
+						if(rate_per_min == 0.0) break;
 						int time_next = time + std::ceil(-std::log(1 - u) / rate_per_min);
 						
 						if(time_next > 30) break; 

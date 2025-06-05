@@ -100,9 +100,16 @@ int main(int argc, char* argv[]) {
 	
 	Print print;
 	
-	if(nb_scenarios == 400)
+	if(nb_scenarios == 500)
 	{
 		print.WriteTripsToFile(scenarios, trips_400_filename);
+		
+		double avg_scenarios = 0.0;
+		for(size_t e=0;e<scenarios.size();e++)
+			avg_scenarios += (double)scenarios[e].size();
+		avg_scenarios /= (double)scenarios.size();
+		printf("Avg scenarios:%.0lf\n",avg_scenarios);
+		
 		return 0;		
 	}
 	
